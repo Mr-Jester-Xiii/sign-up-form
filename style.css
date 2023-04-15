@@ -1,24 +1,47 @@
+:root {
+    font-family: sans-serif;
+}
+
 p {
     color: green;
 }
 
+
+
 .main {
     display: flex;
+    justify-content: center;
 }
 
 .left, .right {
     border: 1px solid #ccc;
     width: 600px;
-    height: 600px;
+    height: 800px;
     display: flex;
     flex-direction: column;
 }
 
-.title {
+.banner {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     height: 100px;
+}
+
+.logo {
+    font-size: 100px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.left {
+    background-image: url("images/tim-rebkavets-B5PNmw5XSpk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-color: #000;
+
 }
