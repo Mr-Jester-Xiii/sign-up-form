@@ -46,3 +46,22 @@ body {
     background-color: #000;
 
 }
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-message {
+    height: 33vh;
+}
+
+.form-bottom {
+    height: 33vh;
+}
