@@ -39,11 +39,11 @@
             <div class="form-container">
                 <h1>Lets do it!</h1>
                 <p>Fields marked with <span class="required">*</span> are required.</p>
-                <form action="/" method="post">
+                <form action="" method="post">
                     <div class="form-left">
                         <div class="input">
                             <label for="first_name">First Name:</label>
-                            <input type="text" id="first_name" placeholder="Bob">
+                            <input type="text" id="first_name" placeholder="Bob" maxlength="20" minlength="1" title="Please enter atleast one letter. First Initial?">
                         </div>
                         <div class="input">
                             <label for="email">Email:<span class="required">*</span></label>
@@ -51,28 +51,29 @@
                         </div>
                         <div class="input">
                             <label for="password">Password:<span class="required">*</span></label>
-                            <input type="password" id="password">
+                            <input type="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Password must be a mix of upper and lower case letters, contain 1 number and 1 symbol (!#./= etc.)">
                         </div>
+                        <button class="button" type="submit">Sign Up</button>
                     </div>
                     <div class="form-right">
                         <div class="input">
                             <label for="surname">Surname:</label>
-                            <input type="text" id="surname" placeholder="Bobbinson">
+                            <input type="text" id="surname" placeholder="Bobbinson" max="20">
                         </div>
                         <div class="input">
                             <label for="phone_number">Phone Number:</label>
-                            <input type="number" id="phone_number" placeholder="07123456789">
+                            <input type="number" id="phone_number" placeholder="07123456789" max="11">
                         </div>
                         <div class="input">
                             <label for="conf_password">Confirm Password:<span class="required">*</span></label>
-                            <input type="password" id="confirmed_password" placeholder="">
+                            <input type="password" id="confirmed_password" placeholder="" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Password must be a mix of upper and lower case letters, contain 1 number and 1 symbol (!#./= etc.)">
                         </div>
+                        <p>Already a Member? <a>Log in</a></p>
                     </div>
                 </form>
             </div>
             <div class="form-bottom">
-                <button class="button">Sign Up</button>
-                <p>Already a Member? <a>Log in</a></p>
+                <p>placeholder for github link</p>
             </div>
         </div>
     </div>
