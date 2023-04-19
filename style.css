@@ -178,6 +178,8 @@ display: flex;
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    color: #383838;
+    text-decoration: none;
 }
 
 .button{
@@ -216,7 +218,6 @@ display: flex;
 
 .button:hover {
   background: #F6F9FE;
-  color: #174ea6;
 }
 
 .button:active {
@@ -226,7 +227,7 @@ display: flex;
 
 .button:focus {
   outline: none;
-  border: 2px solid #4285f4;
+  border: 2px solid #FFD642;
 }
 
 .button:not(:disabled) {
@@ -251,4 +252,9 @@ display: flex;
 
 .required {
     color: red;
+}
+
+.github-link {
+    text-decoration: none;
+    color: #b68427;
 }
