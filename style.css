@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 :root {
     font-family: "Google Sans",Roboto,Arial,sans-serif;
 }
@@ -12,6 +14,8 @@ h1 {
     padding: 5px;
     padding-left: 20px;
 }
+
+
 
 body {
     margin: 0;
@@ -30,28 +34,66 @@ body {
 
 .banner {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
-    height: 100px;
+    height: 175px;
+}
+
+.credit {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+.credit>p{
+    color: #ffffff;
+}
+
+.logo-container, .title {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-    font-size: 100px;
+    height: 170px;
+    width: 170px;
 }
 
 .title {
-    font-size: 50px;
+    margin: 0px;
+    font-size: 64px;
+    font-family: 'Yellowtail', cursive;
+    color: #ffffff;
+}
+
+.slogan {
+    margin: 0px;
+    font-size: 20px;
+    padding-top: 5px;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 .left {
     width: 40vw;
+    min-width: 40vw;
     background-image: url("images/guilherme-stecanella-jv9ATyWT0Bw-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: 40vw;
+    background-size: cover;
     background-color: #000;
+    justify-content: center;
 
+}
+
+.artistlink {
+    text-decoration: underline;
+    color: #fbfbfb;
 }
 
 .right {
