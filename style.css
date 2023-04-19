@@ -4,6 +4,41 @@
     font-family: "Google Sans",Roboto,Arial,sans-serif;
 }
 
+input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input{
+  font-size: 1rem;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  transition: 0.2s;
+}
+
+input:focus {
+    -webkit-box-shadow:inset 1px 1px 1px 2px #FFD642;
+box-shadow:inset 1px 1px 1px 2px #FFD642;
+}
+  
+
 p {
     color: #000;
     padding-left: 20px;
@@ -205,4 +240,8 @@ display: flex;
 
 .button:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.required {
+    color: red;
 }
