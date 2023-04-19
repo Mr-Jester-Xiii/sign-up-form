@@ -34,8 +34,13 @@ input{
 }
 
 input:focus {
-    -webkit-box-shadow:inset 1px 1px 1px 2px #FFD642;
-box-shadow:inset 1px 1px 1px 2px #FFD642;
+    -webkit-box-shadow:inset 1px 1px 1px 1px #FFD642;
+box-shadow:inset 1px 1px 1px 1px #FFD642;
+}
+
+input:invalid {
+    -webkit-box-shadow:inset 1px 1px 1px 1px #ff0000;
+box-shadow:inset 1px 1px 1px 1px #ff0000;
 }
   
 
@@ -154,6 +159,7 @@ display: flex;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: relative;
+    align-items: center;
 }
 
 .welcome-message {
@@ -205,6 +211,7 @@ display: flex;
   width: auto;
   will-change: transform,opacity;
   z-index: 0;
+  margin-left: 20px;
 }
 
 .button:hover {
